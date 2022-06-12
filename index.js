@@ -33,7 +33,7 @@ const main = async () => {
             + numberToHexLittleEndian(json.data[dataIndex].pressure),
         }
       }
-      axios({
+      await axios({
         method: 'POST',
         url: 'http://localhost:3030/callback',
         data,
